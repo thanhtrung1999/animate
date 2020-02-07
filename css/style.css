@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.back-to-top{
+	opacity: 0;
+	visibility: hidden;
+}
+.hidden{
+	opacity: 0;
+}
+.show-btn{
+	opacity: 1;
+	visibility: visible;
+	transition: 0.6s ease;
+}
