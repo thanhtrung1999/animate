@@ -20,30 +20,24 @@ $(document).ready(function() {
 
 
 		if(pos_body>pos_imgContent2-500){ //animation khi scrollDown
-			//Nếu vị trí của body khi scroll > vị trí của ảnh thứ 2 - 500 thì thêm class tạo animation và xóa class hidden
-			$('.content .img-content:nth-child(2)').addClass('rollIn animated').removeClass('hidden'); 
+			$('.content .img-content:nth-child(2)').addClass('rollIn ')
 		}else{ //animation khi scrollUp
-			/*Ngược lại thì xóa class tạo animation, thêm class tạo animation ẩn đi và thêm lại class hidden, 
-			nhưng đến đoạn này bị lỗi, e cũng k biết mô tả ntn, a giúp e với*/
-			$('.content .img-content:nth-child(2)').removeClass('rollIn animated');
-			/* $('.content .img-content:nth-child(2)').addClass('rollOut animated');
-			B.thường nếu ko có bước này thì bước hidden khi scrollUp vẫn thực thi đc,
-			còn bước này e k hiểu vì s khi có lại bị lỗi*/
-			$('.content .img-content:nth-child(2)').addClass('hidden');
+
+			$('.content .img-content:nth-child(2)').removeClass('rollIn ');
+
+
 		}
 
 		if(pos_body>pos_imgContent3-500){
-			$('.content .img-content:nth-child(3)').addClass('fadeInRight animated').removeClass('hidden');
+			$('.content .img-content:nth-child(3)').addClass('fadeInRight')
 		}else{
-			$('.content .img-content:nth-child(3)').removeClass('fadeInRight animated');
-			$('.content .img-content:nth-child(3)').addClass('hidden');
+			$('.content .img-content:nth-child(3)').removeClass('fadeInRight ');
 		}
 
 		if(pos_body>pos_imgContent4-500){
-			$('.content .img-content:last-child').addClass('zoomInDown animated').removeClass('hidden');
+			$('.content .img-content:last-child').addClass('zoomInDown ')
 		}else{
-			$('.content .img-content:last-child').removeClass('zoomInDown animated');
-			$('.content .img-content:last-child').addClass('hidden');
+			$('.content .img-content:last-child').removeClass('zoomInDown ');
 		}
 		
 	});
